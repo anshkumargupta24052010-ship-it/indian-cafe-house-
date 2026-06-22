@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cafe House | Ambikapur</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+    <div class="vignette-overlay"></div>
+
+    <header>
+        <div class="logo">INDIAN CAFE HOUSE<span class="dot">.</span></div>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#vibe" class="nav-link">The Vibe</a>
+            <a href="#booking" class="nav-link">Reserve</a>
+            <a href="#feedback" class="nav-link btn-nav">Feedback</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <span class="sub-title"><i class="fa-solid fa-mug-hot"></i> Ambikapur's Premium Aesthetic Spot</span>
+            <h1>Crafting Moments <br><em>Over Fine Coffee.</em></h1>
+            <p>Experience an immersive blend of luxury ambiance, rich heritage blends, and unforgettable conversations right in the heart of Ambikapur.</p>
+            <div class="cta-group">
+                <a href="#booking" class="btn-premium primary">Book A Table</a>
+                <a href="#vibe" class="btn-premium secondary">Vibe Check 📸</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vibe" class="vibe-section">
+        <div class="section-title">
+            <span>01 / GALLERY</span>
+            <h2>Aesthetic Corner & Vibe Check</h2>
+            <p>Sneak peek into Ambikapur's most instagrammable cafe.</p>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item item-large">
+                <div class="gallery-overlay"><h4>Cozy Lounge</h4><p>#ICHVibes</p></div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-overlay"><h4>Signature Latte</h4><p>Artisanal Brew</p></div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-overlay"><h4>Sizzling Brownie</h4><p>Pure Love</p></div>
+            </div>
+            <div class="gallery-item item-wide">
+                <div class="gallery-overlay"><h4>Weekend Jamming</h4><p>Live Sessions</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="booking-container">
+            <div class="booking-info">
+                <span>02 / RESERVATIONS</span>
+                <h2>Skip the Line,<br>Save Your Spot.</h2>
+                <div class="contact-mini">
+                    <p><i class="fa-solid fa-location-dot"></i> Main Road, Ambikapur, CG</p>
+                    <p><i class="fa-solid fa-clock"></i> 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+
+            <div class="booking-glass-card">
+                <form id="whatsappForm">
+                    <div class="input-group"><label>Your Name</label><input type="text" id="name" required></div>
+                    <div class="row">
+                        <div class="input-group"><label>Date</label><input type="date" id="date" required></div>
+                        <div class="input-group"><label>Time</label><input type="time" id="time" required></div>
+                    </div>
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <select id="guests" required>
+                            <option value="1-2 People">Cozy Corner (1-2 People)</option>
+                            <option value="3-4 People">Standard Table (3-4 People)</option>
+                            <option value="5+ People">Celebration Lounge (5+ People)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Confirm Via WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback-section">
+        <div class="feedback-container">
+            <div class="feedback-card">
+                <span>03 / RATINGS</span>
+                <h2>Share Your Vibe</h2>
+                <p>Loved your time at ICH? Drop us a dynamic rating!</p>
+                
+                <form id="feedbackForm">
+                    <div class="rating-stars">
+                        <input type="radio" name="star" id="star5" value="5 Stars" checked><label for="star5"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="star" id="star4" value="4 Stars"><label for="star4"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="star" id="star3" value="3 Stars"><label for="star3"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="star" id="star2" value="2 Stars"><label for="star2"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" name="star" id="star1" value="1 Star"><label for="star1"><i class="fa-solid fa-star"></i></label>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Your Review Note</label>
+                        <textarea id="reviewMessage" rows="3" placeholder="Tell us about the coffee, staff, or music vibe..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-feedback-submit">Submit Feedback ✨</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58357.51460341775!2d83.1610486!3d23.118224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3987cef47385750f%3A0xe530a21359fae48d!2sAmbikapur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Indian Cafe House Ambikapur. Made for Premium Coffee Cults.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
